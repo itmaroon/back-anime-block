@@ -12,7 +12,14 @@
 	"attributes": {
 		"bg_Color": {
 			"type": "string",
-			"default": "#504237"
+			"default": "#021e79"
+		},
+		"bg_Gradient": {
+			"type": "string"
+		},
+		"number_value": {
+			"type": "number",
+			"default": 200
 		}
 	},
 	"textdomain": "back-anime-block",

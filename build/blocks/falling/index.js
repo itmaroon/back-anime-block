@@ -45,9 +45,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
-/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./editor.scss */ "./src/blocks/falling/editor.scss");
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./editor.scss */ "./src/blocks/falling/editor.scss");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 
@@ -57,10 +60,28 @@ function Edit({
   attributes,
   setAttributes
 }) {
+  const {
+    bg_Color,
+    bg_Gradient,
+    number_value
+  } = attributes;
+
+  //単色かグラデーションかの選択
+  const bgColor = bg_Color || bg_Gradient;
+  //ブロックのスタイル設定
+  const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_4__.useBlockProps)({
+    style: {
+      position: 'absolute',
+      width: '100%',
+      height: '100%',
+      top: 0,
+      left: 0
+    }
+  });
   const options = {
     "particles": {
       "number": {
-        "value": 200,
+        "value": `${number_value}`,
         /*この数値を変更すると雪の数が増減できる*/
         "density": {
           "enable": true,
@@ -157,15 +178,68 @@ function Edit({
 				};
 				document.body.appendChild(particlesScript);
 			`;
+      //idの割り当て
+      script.id = 'itmar-particles-script';
       // iframe内に書き込み
       iframeDocument.body.appendChild(script);
     } else {
       particlesJS('particlesId', options);
     }
-  }, []);
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    id: "particlesId"
-  }));
+    // クリーンアップ関数
+    return () => {
+      const existingScript = iframeDocument.getElementById('itmar-particles-script');
+      // 既存のscriptがある場合、それを削除する
+      if (existingScript) {
+        existingScript.remove();
+      }
+    };
+  }, [number_value]);
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_4__.InspectorControls, {
+    group: "settings"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
+    title: "\u80CC\u666F\u8A2D\u5B9A",
+    initialOpen: true,
+    className: "back_design_ctrl"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_4__.__experimentalPanelColorGradientSettings, {
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Background Color Setting"),
+    settings: [{
+      colorValue: bg_Color,
+      gradientValue: bg_Gradient,
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Choice color or gradient"),
+      onColorChange: newValue => {
+        setAttributes({
+          bg_Color: newValue === undefined ? '' : newValue
+        });
+      },
+      onGradientChange: newValue => {
+        setAttributes({
+          bg_Gradient: newValue
+        });
+      }
+    }]
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
+    title: "\u30D1\u30FC\u30C6\u30A3\u30AF\u30EB\u8A2D\u5B9A",
+    initialOpen: true,
+    className: "particle_ctrl"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, {
+    className: "logoSizeCtrl"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.RangeControl, {
+    value: number_value,
+    label: "\u30D1\u30FC\u30C6\u30A3\u30AF\u30EB\u306E\u6570",
+    max: 500,
+    min: 50,
+    onChange: val => setAttributes({
+      number_value: val
+    }),
+    separatorType: "none",
+    step: 10,
+    withInputField: false
+  })))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", blockProps, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    id: "particlesId",
+    style: {
+      background: bgColor
+    }
+  })));
 }
 
 /***/ }),
@@ -281,6 +355,16 @@ module.exports = window["wp"]["blocks"];
 
 /***/ }),
 
+/***/ "@wordpress/components":
+/*!************************************!*\
+  !*** external ["wp","components"] ***!
+  \************************************/
+/***/ ((module) => {
+
+module.exports = window["wp"]["components"];
+
+/***/ }),
+
 /***/ "@wordpress/element":
 /*!*********************************!*\
   !*** external ["wp","element"] ***!
@@ -307,7 +391,7 @@ module.exports = window["wp"]["i18n"];
   \***************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"itmar/falling","version":"0.1.0","title":"Falling","category":"design","description":"雪や落ち葉の降る背景のアニメーションをブロックにしました","supports":{"html":false},"attributes":{"bg_Color":{"type":"string","default":"#504237"}},"textdomain":"back-anime-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"itmar/falling","version":"0.1.0","title":"Falling","category":"design","description":"雪や落ち葉の降る背景のアニメーションをブロックにしました","supports":{"html":false},"attributes":{"bg_Color":{"type":"string","default":"#021e79"},"bg_Gradient":{"type":"string"},"number_value":{"type":"number","default":200}},"textdomain":"back-anime-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ })
 
