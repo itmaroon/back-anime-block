@@ -1,0 +1,22 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "itmar/falling",
+	"version": "0.1.0",
+	"title": "Falling",
+	"category": "design",
+	"description": "雪や落ち葉の降る背景のアニメーションをブロックにしました",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"bg_Color": {
+			"type": "string",
+			"default": "#504237"
+		}
+	},
+	"textdomain": "back-anime-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
