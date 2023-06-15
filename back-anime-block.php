@@ -34,18 +34,22 @@ function itmar_back_anime_block_add_plugin() {
 		true
 	);
 
-	wp_enqueue_script( 
-		'itmar-back_anime-script', 
-		plugins_url( '/assets/front_rendering.js?'.date('YmdHis'), __FILE__ ), 
-		array('jquery'), 
-		'1.0.0',
-		true
-	);
+	//フロントエンド用のスクリプト
+	if ( ! is_admin() ) {//管理画面の時は読み込まない
+		wp_enqueue_script( 
+			'itmar-back_anime-script', 
+			plugins_url( '/assets/front_rendering.js?'.date('YmdHis'), __FILE__ ), 
+			array('jquery'), 
+			'1.0.0',
+			true
+		);
+	}
+	
 
 	
 	//urlパスの引き渡し
   $plugin_url = plugins_url("",__FILE__);
-	wp_localize_script( 'itmar-back_anime-script', 'back_anime', array(
+	wp_localize_script( 'particles', 'back_anime', array(
 			'plugin_url' => $plugin_url
 	));
 	
