@@ -45,8 +45,6 @@ function itmar_back_anime_block_add_plugin() {
 		);
 	}
 	
-
-	
 	//urlパスの引き渡し
   $plugin_url = plugins_url("",__FILE__);
 	wp_localize_script( 'particles', 'back_anime', array(

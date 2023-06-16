@@ -7,17 +7,12 @@ import { useDeepCompareEffect } from '../../../CustomFooks';
 import {
 	PanelBody,
 	PanelRow,
-	TextControl,
-	Button,
 	RangeControl,
-	Toolbar,
 	RadioControl,
-	CheckboxControl
 } from '@wordpress/components';
 import {
 	useBlockProps,
 	InspectorControls,
-	BlockControls,
 	__experimentalPanelColorGradientSettings as PanelColorGradientSettings,
 } from '@wordpress/block-editor';
 

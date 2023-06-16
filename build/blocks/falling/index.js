@@ -1862,7 +1862,6 @@ function save({
 
   const select_option = particle_options[className] || particle_options['is-style-default'];
   const str_option = JSON.stringify(select_option);
-  console.log(str_option);
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", blockProps, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     id: "particlesId",
     "data-particle_option": str_option,

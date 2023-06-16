@@ -527,7 +527,6 @@ export default function save({ attributes }) {
 
 	const select_option = particle_options[className] || particle_options['is-style-default'];
 	const str_option = JSON.stringify(select_option);
-	console.log(str_option)
 
 	return (
 		<div {...blockProps}>

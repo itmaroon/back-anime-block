@@ -6,6 +6,32 @@
 	"title": "Wave",
 	"category": "design",
 	"description": "波が動く様子のアニメーションです",
+	"attributes": {
+		"first_Color": {
+			"type": "string",
+			"default": "#11a0ad"
+		},
+		"second_Color": {
+			"type": "string",
+			"default": "#11a0ad"
+		},
+		"is_mulutiwave": {
+			"type": "boolean",
+			"default": true
+		},
+		"wave_height": {
+			"type": "number",
+			"default": 200
+		},
+		"first_wave_size": {
+			"type": "number",
+			"default": 3
+		},
+		"second_wave_size": {
+			"type": "number",
+			"default": 2
+		}
+	},
 	"supports": {
 		"html": false
 	},
