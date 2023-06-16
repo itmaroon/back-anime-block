@@ -2,6 +2,7 @@
 import {
   CheckboxControl, ColorPicker
 } from '@wordpress/components';
+
 import { useState } from '@wordpress/element';
 
 const MultiSelect = ({ stockArrayName, stokArray, type, option, setAttributes }) => {
@@ -18,16 +19,32 @@ const MultiSelect = ({ stockArrayName, stokArray, type, option, setAttributes })
   const [activeColorIndex, setActiveColorIndex] = useState(null);
   //ColorItemがクリックされたときの処理
   const handleColorItemClick = (index) => {
+    //同じ色見本が押されたらピッカーを消す
     setActiveColorIndex(index === activeColorIndex ? null : index);
+
   };
   //ColorPickerで色が設定されたときの処理
   const handleColorPickerChange = (color) => {
-    const updatedArray = [...stokArray];
-    updatedArray[activeColorIndex] = color.hex;
-    setAttributes({ [stockArrayName]: updatedArray });
-    setActiveColorIndex(null); // ColorPickerの処理完了後にactiveColorIndexをnullに設定
-  };
+    let updatedArray;
+    if (activeColorIndex >= stokArray.length) {
+      updatedArray = [...stokArray, color.hex];
+    } else {
+      updatedArray = [...stokArray];
+      updatedArray[activeColorIndex] = color.hex;
+    }
 
+    setAttributes({ [stockArrayName]: updatedArray });
+  };
+  //ColorDeleteがクリックされたときの処理
+  const handleColorDelete = (indexToRemove) => {
+    setAttributes({
+      [stockArrayName]: stokArray.filter((item, index) => index !== indexToRemove)
+    })
+  }
+  //ColorPlusがクリックされたときの処理
+  const handleColorAdd = () => {
+    setActiveColorIndex(stokArray.length);
+  };
 
   return (
     <div>
@@ -46,8 +63,17 @@ const MultiSelect = ({ stockArrayName, stokArray, type, option, setAttributes })
       {type === 'colorPicker' && (
         <>
           {stokArray.map((color, index) => (
-            <div className='color_item' style={{ backgroundColor: color }} onClick={() => handleColorItemClick(index)} />
+            <div className='color_item' >
+              {index == activeColorIndex &&
+                <div className='color_circle checked' style={{ backgroundColor: color }} onClick={() => handleColorItemClick(index)}></div>
+              }
+              {index != activeColorIndex &&
+                <div className='color_circle' style={{ backgroundColor: color }} onClick={() => handleColorItemClick(index)}></div>
+              }
+              <div className='color_delete' onClick={() => handleColorDelete(index)}></div>
+            </div>
           ))}
+          <div className='color_item color_plus' onClick={() => handleColorAdd()}></div>
           {activeColorIndex !== null && (
             <ColorPicker
               color={stokArray[activeColorIndex]}

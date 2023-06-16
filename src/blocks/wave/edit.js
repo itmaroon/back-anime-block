@@ -6,10 +6,10 @@ import { useBlockProps } from '@wordpress/block-editor';
 import './editor.scss';
 
 
-export default function Edit() {
+export default function Edit({ attributes, setAttributes }) {
 	return (
-		<p {...useBlockProps()}>
-			{__('Degital – hello from the editor!', 'degital')}
-		</p>
+		<div {...useBlockProps()}>
+			<canvas id="waveCanvas"></canvas>
+		</div>
 	);
 }

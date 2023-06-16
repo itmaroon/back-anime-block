@@ -549,8 +549,6 @@ export default function Edit({ attributes, setAttributes }) {
 	//パーティクルのイメージ画像リストの取得
 	const imageList = ImageList();
 
-
-
 	useDeepCompareEffect(() => {
 		const iframe = document.getElementsByName('editor-canvas')[0]; // name属性を利用
 		//iframeがあればそちらにスクリプトをインジェクション（サイトエディタ対応）

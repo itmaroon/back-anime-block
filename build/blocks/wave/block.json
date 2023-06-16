@@ -1,12 +1,11 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 2,
-  "name": "itmar/degital",
+  "name": "itmar/wave",
   "version": "0.1.0",
-  "title": "Degital",
+  "title": "Wave",
   "category": "design",
-  "icon": "smiley",
-  "description": "デジタル風のマーカーが舞うアニメーションのブロックです",
+  "description": "波が動く様子のアニメーションです",
   "supports": {
     "html": false
   },
