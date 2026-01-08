@@ -1,11 +1,10 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
-  "apiVersion": 2,
+  "apiVersion": 3,
   "name": "itmar/falling",
   "version": "0.1.0",
   "title": "Falling",
   "category": "design",
-  "description": "パーティクルのアニメーションをブロックにしました",
   "supports": {
     "html": false
   },
@@ -119,29 +118,15 @@
     "shapeSpeed": {
       "type": "number",
       "default": 4
+    },
+    "tsOptionsJson": {
+      "type": "string",
+      "default": ""
     }
   },
-  "styles": [
-    {
-      "name": "default",
-      "label": "デフォルト",
-      "isDefault": true
-    },
-    {
-      "name": "degital",
-      "label": "幾何学模様"
-    },
-    {
-      "name": "paper",
-      "label": "紙吹雪"
-    },
-    {
-      "name": "bubbly",
-      "label": "バブル"
-    }
-  ],
   "textdomain": "back-anime-block",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
-  "style": "file:./style-index.css"
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
 }

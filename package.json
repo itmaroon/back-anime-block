@@ -15,10 +15,9 @@
 		"plugin-zip": "wp-scripts plugin-zip",
 		"start": "wp-scripts start"
 	},
-	"devDependencies": {
-		"@wordpress/scripts": "^26.6.0"
-	},
 	"dependencies": {
-		"tsparticles": "^2.10.1"
+		"@tsparticles/engine": "^3.9.1",
+		"@tsparticles/slim": "^3.9.1",
+		"@tsparticles/pjs": "^3.9.1"
 	}
 }

@@ -1,11 +1,10 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
-	"apiVersion": 2,
+	"apiVersion": 3,
 	"name": "itmar/wave",
 	"version": "0.1.0",
 	"title": "Wave",
 	"category": "design",
-	"description": "波が動く様子のアニメーションです",
 	"attributes": {
 		"first_Color": {
 			"type": "string",
@@ -19,17 +18,25 @@
 			"type": "boolean",
 			"default": true
 		},
-		"wave_height": {
-			"type": "number",
-			"default": 200
+		"placement": {
+			"type": "string",
+			"default": "bottom"
 		},
-		"first_wave_size": {
-			"type": "number",
-			"default": 3
+		"default_val": {
+			"type": "object",
+			"default": {
+				"wave_height": 200,
+				"first_wave_size":3,
+				"second_wave_size":2
+			}
 		},
-		"second_wave_size": {
-			"type": "number",
-			"default": 2
+		"mobile_val": {
+			"type": "object",
+			"default": {
+				"wave_height": 100,
+				"first_wave_size":3,
+				"second_wave_size":2
+			}
 		}
 	},
 	"supports": {
@@ -38,5 +45,6 @@
 	"textdomain": "degital",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
-	"style": "file:./style-index.css"
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
 }

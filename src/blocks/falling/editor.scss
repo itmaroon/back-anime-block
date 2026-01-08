@@ -8,7 +8,7 @@
 	border: 1px dotted #f00;
 }
 
-.particle_image,
+.components-panel__body .particle_image,
 .particle_direction {
 	width: 100%;
 
@@ -69,8 +69,8 @@
 	}
 }
 
-.particle_direction {
 
+.components-panel__body .particle_direction {
 	.components-radio-control {
 		.components-flex {
 			row-gap: 2px;
@@ -179,6 +179,7 @@
 	}
 
 }
+
 
 .shapeType-ctrl {
 	width: 100%;

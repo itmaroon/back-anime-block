@@ -1,0 +1,282 @@
+# Copyright (C) 2026 Web Creator ITmaroon
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Back Anime Block 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/back-anime-block\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-01-05T04:13:15+01:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: back-anime-block\n"
+
+#. Plugin Name of the plugin
+#: back-anime-block.php
+msgid "Back Anime Block"
+msgstr ""
+
+#. Description of the plugin
+#: back-anime-block.php
+msgid "This is a plugin that collects blocks that provide the ability to place animations in the background."
+msgstr ""
+
+#. Author of the plugin
+#: back-anime-block.php
+msgid "Web Creator ITmaroon"
+msgstr ""
+
+#: build/blocks/falling/index.js:4048
+#: src/blocks/falling/edit.js:599
+#: build/blocks/falling/index.js:3165
+msgid "Background Settings"
+msgstr ""
+
+#: build/blocks/falling/index.js:4052
+#: build/blocks/wave/index.js:3438
+#: build/blocks/wave/index.js:3468
+#: src/blocks/falling/edit.js:604
+#: src/blocks/wave/edit.js:158
+#: src/blocks/wave/edit.js:191
+#: build/blocks/falling/index.js:3170
+#: build/blocks/wave/index.js:2604
+#: build/blocks/wave/index.js:2637
+msgid "Background Color Setting"
+msgstr ""
+
+#: build/blocks/falling/index.js:4072
+#: src/blocks/falling/edit.js:616
+#: build/blocks/falling/index.js:3182
+msgid "Choice color or gradient"
+msgstr ""
+
+#: build/blocks/falling/index.js:4086
+#: src/blocks/falling/edit.js:631
+#: build/blocks/falling/index.js:3197
+msgid "Particle Settings"
+msgstr ""
+
+#: build/blocks/falling/index.js:4093
+#: src/blocks/falling/edit.js:638
+#: build/blocks/falling/index.js:3204
+msgid "Particle Num"
+msgstr ""
+
+#: build/blocks/falling/index.js:4107
+#: src/blocks/falling/edit.js:650
+#: build/blocks/falling/index.js:3216
+msgid "Particle Size"
+msgstr ""
+
+#: build/blocks/falling/index.js:4121
+#: src/blocks/falling/edit.js:662
+#: build/blocks/falling/index.js:3228
+msgid "Falling Speed"
+msgstr ""
+
+#: build/blocks/falling/index.js:4135
+#: src/blocks/falling/edit.js:674
+#: build/blocks/falling/index.js:3240
+msgid "Falling Direction"
+msgstr ""
+
+#: build/blocks/falling/index.js:4167
+#: src/blocks/falling/edit.js:696
+#: build/blocks/falling/index.js:3262
+msgid "Selecting a particle image"
+msgstr ""
+
+#: build/blocks/falling/index.js:4179
+#: src/blocks/falling/edit.js:709
+#: build/blocks/falling/index.js:3275
+msgid "Polyline Settings"
+msgstr ""
+
+#: build/blocks/falling/index.js:4186
+#: src/blocks/falling/edit.js:716
+#: build/blocks/falling/index.js:3282
+msgid "Polyline Num"
+msgstr ""
+
+#: build/blocks/falling/index.js:4197
+#: src/blocks/falling/edit.js:726
+#: build/blocks/falling/index.js:3292
+msgid "Color Setting"
+msgstr ""
+
+#: build/blocks/falling/index.js:4200
+#: src/blocks/falling/edit.js:730
+#: build/blocks/falling/index.js:3296
+msgid "Poliline line Color"
+msgstr ""
+
+#: build/blocks/falling/index.js:4206
+#: src/blocks/falling/edit.js:736
+#: build/blocks/falling/index.js:3302
+msgid "Link line Color"
+msgstr ""
+
+#: build/blocks/falling/index.js:4215
+#: build/blocks/falling/index.js:4353
+#: src/blocks/falling/edit.js:746
+#: src/blocks/falling/edit.js:871
+#: build/blocks/falling/index.js:3312
+#: build/blocks/falling/index.js:3437
+msgid "Moving Speed"
+msgstr ""
+
+#: build/blocks/falling/index.js:4227
+#: src/blocks/falling/edit.js:759
+#: build/blocks/falling/index.js:3325
+msgid "Confetti Settings"
+msgstr ""
+
+#: build/blocks/falling/index.js:4234
+#: src/blocks/falling/edit.js:766
+#: build/blocks/falling/index.js:3332
+msgid "Confetti Num"
+msgstr ""
+
+#: build/blocks/falling/index.js:4248
+#: src/blocks/falling/edit.js:778
+#: build/blocks/falling/index.js:3344
+msgid "Confetti density"
+msgstr ""
+
+#: build/blocks/falling/index.js:4262
+#: src/blocks/falling/edit.js:791
+#: build/blocks/falling/index.js:3357
+msgid "The speed of the blizzard"
+msgstr ""
+
+#: build/blocks/falling/index.js:4276
+#: src/blocks/falling/edit.js:803
+#: build/blocks/falling/index.js:3369
+msgid "Blizzard Direction"
+msgstr ""
+
+#: build/blocks/falling/index.js:4304
+#: src/blocks/falling/edit.js:826
+#: build/blocks/falling/index.js:3392
+msgid "Shape Settings"
+msgstr ""
+
+#: build/blocks/falling/index.js:4311
+#: src/blocks/falling/edit.js:833
+#: build/blocks/falling/index.js:3399
+msgid "Shape Num"
+msgstr ""
+
+#: build/blocks/falling/index.js:4325
+#: src/blocks/falling/edit.js:845
+#: build/blocks/falling/index.js:3411
+msgid "Shape Density"
+msgstr ""
+
+#: build/blocks/falling/index.js:4339
+#: src/blocks/falling/edit.js:858
+#: build/blocks/falling/index.js:3424
+msgid "Shape Size"
+msgstr ""
+
+#: build/blocks/falling/index.js:4367
+#: src/blocks/falling/edit.js:883
+#: build/blocks/falling/index.js:3449
+msgid "Types included in the shape"
+msgstr ""
+
+#: build/blocks/falling/index.js:4380
+#: src/blocks/falling/edit.js:897
+#: build/blocks/falling/index.js:3463
+msgid "Color included in the shape"
+msgstr ""
+
+#: build/blocks/falling/index.js:4481
+#: src/blocks/falling/index.js:17
+#: build/blocks/falling/index.js:3515
+msgid "Default"
+msgstr ""
+
+#: build/blocks/falling/index.js:4485
+#: src/blocks/falling/index.js:22
+#: build/blocks/falling/index.js:3520
+msgid "Geometric Patterns"
+msgstr ""
+
+#: build/blocks/falling/index.js:4488
+#: src/blocks/falling/index.js:26
+#: build/blocks/falling/index.js:3524
+msgid "Confetti"
+msgstr ""
+
+#: build/blocks/falling/index.js:4491
+#: src/blocks/falling/index.js:30
+#: build/blocks/falling/index.js:3528
+msgid "Bubble"
+msgstr ""
+
+#: build/blocks/falling/index.js:4493
+#: src/blocks/falling/index.js:34
+#: build/blocks/falling/index.js:3532
+msgid "Particle animation has been made blocky."
+msgstr ""
+
+#: build/blocks/wave/index.js:3407
+#: src/blocks/wave/edit.js:128
+#: build/blocks/wave/index.js:2574
+msgid "Global Settings"
+msgstr ""
+
+#: build/blocks/wave/index.js:3412
+#: src/blocks/wave/edit.js:134
+#: build/blocks/wave/index.js:2580
+msgid "Double the waves"
+msgstr ""
+
+#: build/blocks/wave/index.js:3422
+#: build/blocks/wave/index.js:3452
+#: build/blocks/wave/index.js:3482
+#: src/blocks/wave/edit.js:142
+#: src/blocks/wave/edit.js:174
+#: src/blocks/wave/edit.js:207
+#: build/blocks/wave/index.js:2588
+#: build/blocks/wave/index.js:2620
+#: build/blocks/wave/index.js:2653
+msgid "Wave Height"
+msgstr ""
+
+#: build/blocks/wave/index.js:3434
+#: src/blocks/wave/edit.js:153
+#: build/blocks/wave/index.js:2599
+msgid "Wave 1 Setup"
+msgstr ""
+
+#: build/blocks/wave/index.js:3441
+#: build/blocks/wave/index.js:3471
+#: src/blocks/wave/edit.js:162
+#: src/blocks/wave/edit.js:195
+#: build/blocks/wave/index.js:2608
+#: build/blocks/wave/index.js:2641
+msgid "Choice color"
+msgstr ""
+
+#: build/blocks/wave/index.js:3464
+#: src/blocks/wave/edit.js:186
+#: build/blocks/wave/index.js:2632
+msgid "Wave 2 Setup"
+msgstr ""
+
+#: build/blocks/wave/index.js:3546
+#: src/blocks/wave/index.js:11
+#: build/blocks/wave/index.js:2684
+msgid "This block creates animations of moving waves."
+msgstr ""
+
+#: build/blocks/falling/block.json
+#: src/blocks/falling/block.json
+msgctxt "block title"
+msgid "Falling"
+msgstr ""
