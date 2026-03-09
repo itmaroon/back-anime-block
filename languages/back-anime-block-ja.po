@@ -5,8 +5,8 @@ msgstr ""
 "Project-Id-Version: Back Anime Block 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/back-anime-"
 "block\n"
-"POT-Creation-Date: 2026-01-05T04:13:15+01:00\n"
-"PO-Revision-Date: 2026-01-05 12:52+0900\n"
+"POT-Creation-Date: 2026-01-08T10:48:38+01:00\n"
+"PO-Revision-Date: 2026-01-08 18:52+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -35,203 +35,195 @@ msgstr ""
 msgid "Web Creator ITmaroon"
 msgstr "Web クリエイター ITmaroon"
 
-#: build/blocks/falling/index.js:4048 src/blocks/falling/edit.js:599
-#: build/blocks/falling/index.js:3165
-msgid "Background Settings"
-msgstr "背景の設定"
-
-#: build/blocks/falling/index.js:4052 build/blocks/wave/index.js:3438
-#: build/blocks/wave/index.js:3468 src/blocks/falling/edit.js:604
-#: src/blocks/wave/edit.js:158 src/blocks/wave/edit.js:191
-#: build/blocks/falling/index.js:3170 build/blocks/wave/index.js:2604
-#: build/blocks/wave/index.js:2637
-msgid "Background Color Setting"
-msgstr "背景色の選択"
-
-#: build/blocks/falling/index.js:4072 src/blocks/falling/edit.js:616
-#: build/blocks/falling/index.js:3182
-msgid "Choice color or gradient"
-msgstr "単色・グラデーションの選択"
-
-#: build/blocks/falling/index.js:4086 src/blocks/falling/edit.js:631
-#: build/blocks/falling/index.js:3197
-msgid "Particle Settings"
-msgstr "パーティクル設定"
-
-#: build/blocks/falling/index.js:4093 src/blocks/falling/edit.js:638
-#: build/blocks/falling/index.js:3204
-msgid "Particle Num"
-msgstr "パーティクルの数"
-
-#: build/blocks/falling/index.js:4107 src/blocks/falling/edit.js:650
-#: build/blocks/falling/index.js:3216
-msgid "Particle Size"
-msgstr "パーティクルの大きさ"
-
-#: build/blocks/falling/index.js:4121 src/blocks/falling/edit.js:662
-#: build/blocks/falling/index.js:3228
-msgid "Falling Speed"
-msgstr "落下速度"
-
-#: build/blocks/falling/index.js:4135 src/blocks/falling/edit.js:674
-#: build/blocks/falling/index.js:3240
-msgid "Falling Direction"
-msgstr "落下の方向"
-
-#: build/blocks/falling/index.js:4167 src/blocks/falling/edit.js:696
-#: build/blocks/falling/index.js:3262
-msgid "Selecting a particle image"
-msgstr "パーティクルイメージの選択"
-
-#: build/blocks/falling/index.js:4179 src/blocks/falling/edit.js:709
-#: build/blocks/falling/index.js:3275
-msgid "Polyline Settings"
-msgstr "ポリラインの設定"
-
-#: build/blocks/falling/index.js:4186 src/blocks/falling/edit.js:716
-#: build/blocks/falling/index.js:3282
-msgid "Polyline Num"
-msgstr "ポリラインの数"
-
-#: build/blocks/falling/index.js:4197 src/blocks/falling/edit.js:726
-#: build/blocks/falling/index.js:3292
-msgid "Color Setting"
-msgstr "色の設定"
-
-#: build/blocks/falling/index.js:4200 src/blocks/falling/edit.js:730
-#: build/blocks/falling/index.js:3296
-msgid "Poliline line Color"
-msgstr "ポリラインの色"
-
-#: build/blocks/falling/index.js:4206 src/blocks/falling/edit.js:736
-#: build/blocks/falling/index.js:3302
-msgid "Link line Color"
-msgstr "リンクラインの色"
-
-#: build/blocks/falling/index.js:4215 build/blocks/falling/index.js:4353
-#: src/blocks/falling/edit.js:746 src/blocks/falling/edit.js:871
-#: build/blocks/falling/index.js:3312 build/blocks/falling/index.js:3437
-msgid "Moving Speed"
-msgstr "動く速度"
-
-#: build/blocks/falling/index.js:4227 src/blocks/falling/edit.js:759
-#: build/blocks/falling/index.js:3325
-msgid "Confetti Settings"
-msgstr "紙吹雪設定"
-
-#: build/blocks/falling/index.js:4234 src/blocks/falling/edit.js:766
-#: build/blocks/falling/index.js:3332
-msgid "Confetti Num"
-msgstr "紙吹雪の数"
-
-#: build/blocks/falling/index.js:4248 src/blocks/falling/edit.js:778
-#: build/blocks/falling/index.js:3344
-msgid "Confetti density"
-msgstr "紙吹雪の密集度"
-
-#: build/blocks/falling/index.js:4262 src/blocks/falling/edit.js:791
-#: build/blocks/falling/index.js:3357
-msgid "The speed of the blizzard"
-msgstr "吹雪の速度"
-
-#: build/blocks/falling/index.js:4276 src/blocks/falling/edit.js:803
-#: build/blocks/falling/index.js:3369
-msgid "Blizzard Direction"
-msgstr "吹雪く方向"
-
-#: build/blocks/falling/index.js:4304 src/blocks/falling/edit.js:826
-#: build/blocks/falling/index.js:3392
-msgid "Shape Settings"
-msgstr "シェイプ設定"
-
-#: build/blocks/falling/index.js:4311 src/blocks/falling/edit.js:833
-#: build/blocks/falling/index.js:3399
-msgid "Shape Num"
-msgstr "シェイプの数"
-
-#: build/blocks/falling/index.js:4325 src/blocks/falling/edit.js:845
-#: build/blocks/falling/index.js:3411
-msgid "Shape Density"
-msgstr "シェイプの密集度"
-
-#: build/blocks/falling/index.js:4339 src/blocks/falling/edit.js:858
-#: build/blocks/falling/index.js:3424
-msgid "Shape Size"
-msgstr "シェイプのサイズ"
-
-#: build/blocks/falling/index.js:4367 src/blocks/falling/edit.js:883
-#: build/blocks/falling/index.js:3449
-msgid "Types included in the shape"
-msgstr "シェイプに含むタイプ"
-
-#: build/blocks/falling/index.js:4380 src/blocks/falling/edit.js:897
-#: build/blocks/falling/index.js:3463
-msgid "Color included in the shape"
-msgstr "シェイプに含む色"
-
-#: build/blocks/falling/index.js:4481 src/blocks/falling/index.js:17
-#: build/blocks/falling/index.js:3515
+#: build/blocks/falling/index.js:1 src/blocks/falling/index.js:17
 msgid "Default"
 msgstr "デフォルト"
 
-#: build/blocks/falling/index.js:4485 src/blocks/falling/index.js:22
-#: build/blocks/falling/index.js:3520
+#: build/blocks/falling/index.js:1 src/blocks/falling/index.js:22
 msgid "Geometric Patterns"
 msgstr "幾何学模様"
 
-#: build/blocks/falling/index.js:4488 src/blocks/falling/index.js:26
-#: build/blocks/falling/index.js:3524
+#: build/blocks/falling/index.js:1 src/blocks/falling/index.js:26
 msgid "Confetti"
 msgstr "紙吹雪"
 
-#: build/blocks/falling/index.js:4491 src/blocks/falling/index.js:30
-#: build/blocks/falling/index.js:3528
+#: build/blocks/falling/index.js:1 src/blocks/falling/index.js:30
 msgid "Bubble"
 msgstr "バブル"
 
-#: build/blocks/falling/index.js:4493 src/blocks/falling/index.js:34
-#: build/blocks/falling/index.js:3532
+#: build/blocks/falling/index.js:1 src/blocks/falling/index.js:34
 msgid "Particle animation has been made blocky."
 msgstr "パーティクルアニメーションがブロックで提供します。"
 
-#: build/blocks/wave/index.js:3407 src/blocks/wave/edit.js:128
-#: build/blocks/wave/index.js:2574
+#: build/blocks/falling/index.js:1 src/blocks/falling/edit.js:496
+msgid "Background Settings"
+msgstr "背景の設定"
+
+#: build/blocks/falling/index.js:1 build/blocks/wave/index.js:25
+#: src/blocks/falling/edit.js:501 src/blocks/wave/edit.js:384
+#: src/blocks/wave/edit.js:436
+msgid "Background Color Setting"
+msgstr "背景色の選択"
+
+#: build/blocks/falling/index.js:1 src/blocks/falling/edit.js:513
+msgid "Choice color or gradient"
+msgstr "単色・グラデーションの選択"
+
+#: build/blocks/falling/index.js:1 src/blocks/falling/edit.js:528
+msgid "Particle Settings"
+msgstr "パーティクル設定"
+
+#: build/blocks/falling/index.js:1 src/blocks/falling/edit.js:535
+msgid "Particle Num"
+msgstr "パーティクルの数"
+
+#: build/blocks/falling/index.js:1 src/blocks/falling/edit.js:547
+msgid "Particle Size"
+msgstr "パーティクルの大きさ"
+
+#: build/blocks/falling/index.js:1 src/blocks/falling/edit.js:559
+msgid "Falling Speed"
+msgstr "落下速度"
+
+#: build/blocks/falling/index.js:1 src/blocks/falling/edit.js:571
+msgid "Falling Direction"
+msgstr "落下の方向"
+
+#: build/blocks/falling/index.js:1 src/blocks/falling/edit.js:593
+msgid "Selecting a particle image"
+msgstr "パーティクルイメージの選択"
+
+#: build/blocks/falling/index.js:1 src/blocks/falling/edit.js:606
+msgid "Polyline Settings"
+msgstr "ポリラインの設定"
+
+#: build/blocks/falling/index.js:1 src/blocks/falling/edit.js:613
+msgid "Polyline Num"
+msgstr "ポリラインの数"
+
+#: build/blocks/falling/index.js:1 src/blocks/falling/edit.js:623
+msgid "Color Setting"
+msgstr "色の設定"
+
+#: build/blocks/falling/index.js:1 src/blocks/falling/edit.js:627
+msgid "Poliline line Color"
+msgstr "ポリラインの色"
+
+#: build/blocks/falling/index.js:1 src/blocks/falling/edit.js:633
+msgid "Link line Color"
+msgstr "リンクラインの色"
+
+#: build/blocks/falling/index.js:1 src/blocks/falling/edit.js:643
+#: src/blocks/falling/edit.js:768
+msgid "Moving Speed"
+msgstr "動く速度"
+
+#: build/blocks/falling/index.js:1 src/blocks/falling/edit.js:656
+msgid "Confetti Settings"
+msgstr "紙吹雪設定"
+
+#: build/blocks/falling/index.js:1 src/blocks/falling/edit.js:663
+msgid "Confetti Num"
+msgstr "紙吹雪の数"
+
+#: build/blocks/falling/index.js:1 src/blocks/falling/edit.js:675
+msgid "Confetti density"
+msgstr "紙吹雪の密集度"
+
+#: build/blocks/falling/index.js:1 src/blocks/falling/edit.js:688
+msgid "The speed of the blizzard"
+msgstr "吹雪の速度"
+
+#: build/blocks/falling/index.js:1 src/blocks/falling/edit.js:700
+msgid "Blizzard Direction"
+msgstr "吹雪く方向"
+
+#: build/blocks/falling/index.js:1 src/blocks/falling/edit.js:723
+msgid "Shape Settings"
+msgstr "シェイプ設定"
+
+#: build/blocks/falling/index.js:1 src/blocks/falling/edit.js:730
+msgid "Shape Num"
+msgstr "シェイプの数"
+
+#: build/blocks/falling/index.js:1 src/blocks/falling/edit.js:742
+msgid "Shape Density"
+msgstr "シェイプの密集度"
+
+#: build/blocks/falling/index.js:1 src/blocks/falling/edit.js:755
+msgid "Shape Size"
+msgstr "シェイプのサイズ"
+
+#: build/blocks/falling/index.js:1 src/blocks/falling/edit.js:780
+msgid "Types included in the shape"
+msgstr "シェイプに含むタイプ"
+
+#: build/blocks/falling/index.js:1 src/blocks/falling/edit.js:794
+msgid "Color included in the shape"
+msgstr "シェイプに含む色"
+
+#: build/blocks/wave/index.js:25 src/blocks/wave/index.js:11
+msgid "This block creates animations of moving waves."
+msgstr "このブロックは、動く波のアニメーションを作成します。"
+
+#: build/blocks/wave/index.js:25 src/blocks/wave/edit.js:320
 msgid "Global Settings"
 msgstr "全体設定"
 
-#: build/blocks/wave/index.js:3412 src/blocks/wave/edit.js:134
-#: build/blocks/wave/index.js:2580
+#: build/blocks/wave/index.js:25 src/blocks/wave/edit.js:326
 msgid "Double the waves"
 msgstr "波を２重にする"
 
-#: build/blocks/wave/index.js:3422 build/blocks/wave/index.js:3452
-#: build/blocks/wave/index.js:3482 src/blocks/wave/edit.js:142
-#: src/blocks/wave/edit.js:174 src/blocks/wave/edit.js:207
-#: build/blocks/wave/index.js:2588 build/blocks/wave/index.js:2620
-#: build/blocks/wave/index.js:2653
-msgid "Wave Height"
-msgstr "波の高さ"
+#: build/blocks/wave/index.js:25 src/blocks/wave/edit.js:339
+msgid "Wave Height(mobile)"
+msgstr "波の高さ（モバイル）"
 
-#: build/blocks/wave/index.js:3434 src/blocks/wave/edit.js:153
-#: build/blocks/wave/index.js:2599
+#: build/blocks/wave/index.js:25 src/blocks/wave/edit.js:338
+msgid "Wave Height(desk top)"
+msgstr "波の高さ（デスクトップ）"
+
+#: build/blocks/wave/index.js:25 src/blocks/wave/edit.js:362
+msgid "Placement"
+msgstr "配置"
+
+#: build/blocks/wave/index.js:25 src/blocks/wave/edit.js:365
+msgid "Top"
+msgstr "上"
+
+#: build/blocks/wave/index.js:25 src/blocks/wave/edit.js:366
+msgid "Right"
+msgstr "右"
+
+#: build/blocks/wave/index.js:25 src/blocks/wave/edit.js:367
+msgid "Bottom"
+msgstr "下"
+
+#: build/blocks/wave/index.js:25 src/blocks/wave/edit.js:368
+msgid "Left"
+msgstr "左"
+
+#: build/blocks/wave/index.js:25 src/blocks/wave/edit.js:379
 msgid "Wave 1 Setup"
 msgstr "波１の設定"
 
-#: build/blocks/wave/index.js:3441 build/blocks/wave/index.js:3471
-#: src/blocks/wave/edit.js:162 src/blocks/wave/edit.js:195
-#: build/blocks/wave/index.js:2608 build/blocks/wave/index.js:2641
+#: build/blocks/wave/index.js:25 src/blocks/wave/edit.js:388
+#: src/blocks/wave/edit.js:440
 msgid "Choice color"
 msgstr "色の選択"
 
-#: build/blocks/wave/index.js:3464 src/blocks/wave/edit.js:186
-#: build/blocks/wave/index.js:2632
+#: build/blocks/wave/index.js:25 src/blocks/wave/edit.js:407
+#: src/blocks/wave/edit.js:459
+msgid "Wave Size(mobile)"
+msgstr "波のサイズ（モバイル）"
+
+#: build/blocks/wave/index.js:25 src/blocks/wave/edit.js:406
+#: src/blocks/wave/edit.js:458
+msgid "Wave Size(desk top)"
+msgstr "波のサイズ（デスクトップ）"
+
+#: build/blocks/wave/index.js:25 src/blocks/wave/edit.js:431
 msgid "Wave 2 Setup"
 msgstr "波２の設定"
-
-#: build/blocks/wave/index.js:3546 src/blocks/wave/index.js:11
-#: build/blocks/wave/index.js:2684
-msgid "This block creates animations of moving waves."
-msgstr "このブロックは、動く波のアニメーションを作成します。"
 
 #: build/blocks/falling/block.json src/blocks/falling/block.json
 msgctxt "block title"

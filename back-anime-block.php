@@ -4,7 +4,7 @@
  * Plugin Name:       Back Anime Block
  * Description:       This is a plugin that collects blocks that provide the ability to place animations in the background.
  * Requires at least: 6.4
- * Requires PHP:      8.2.10
+ * Requires PHP:      8.2
  * Version:           0.1.0
  * Author:            Web Creator ITmaroon
  * License:           GPL-2.0-or-later
@@ -37,28 +37,6 @@ add_action('init', function () use ($block_entry) {
 //プラグインの読み込み
 function itmar_back_anime_block_add_plugin()
 {
-	// $dir = dirname(__FILE__);
-	// //JavaScript ファイルの読み込み（エンキュー）
-	// wp_enqueue_script(
-	// 	'particles',
-	// 	'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js',
-	// 	array(),
-	// 	'2.0.0',
-	// 	true
-	// );
-
-	//フロントエンド用のスクリプト
-	// if (! is_admin()) { //管理画面の時は読み込まない
-	// 	$script_path = plugin_dir_path(__FILE__) . 'assets/front_rendering.js';
-	// 	wp_enqueue_script(
-	// 		'itmar-back_anime-script',
-	// 		plugins_url('/assets/front_rendering.js?', __FILE__),
-	// 		array('jquery', 'wp-i18n'),
-	// 		filemtime($script_path),
-	// 		true
-	// 	);
-	// }
-
 	//urlパスの引き渡し
 	$plugin_url = plugins_url("", __FILE__);
 	wp_localize_script('itmar-script-handle', 'back_anime', array(
